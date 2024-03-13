@@ -5,6 +5,14 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+
+remote_theme: pages-themes/minimal@v0.2.0# Configurations
+
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
+
+
 # Site settings
 title: Yummy Theme # ex. I m Chuan
 name: Your Name # ex. DONGChuan
