@@ -212,6 +212,11 @@ yat:
 #     background_color: "#34323d"
 #     color: "#bbb"
 
+
+# changyan comments
+ changyan: true
+#   shortname: "Your Disqus username"
+
 # Disqus comments
 # disqus:
 #   shortname: "Your Disqus username"
