@@ -1,139 +1,188 @@
-# Yummy Jekyll Theme
+# Agency Jekyll Theme
+[![RubyGems Downloads](https://img.shields.io/gem/dt/jekyll-agency?label=gem%20downloads)](https://rubygems.org/gems/jekyll-agency)
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue)](/LICENSE.txt)
+[![Tip Me via PayPal](https://img.shields.io/badge/PayPal-tip_me-green?logo=paypal)](https://www.paypal.me/raviriley)
+[![template button](https://img.shields.io/badge/Generate_theme_from_template-2ea44f)][generate]
+[![Featured on Jekyll-Themes.com](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/agency-jekyll-theme/)
 
-A Simple, Bootstrap Based Theme. Especially for developers who like to show their projects on website and like to take notes. There are also some magical features to discover. 
+## Preview - click for live demo
 
-## [Live Demo](http://dongchuan.github.io/)
+[![screenshot](/screenshot.PNG)][demo-page]
 
-Open issues if you find bugs or even have trouble installing jekyll or dependencies. :D
+## Warning
 
-Or contact: dongchuan55@gmail.com
+> :warning: **Notice for those using legacy Formspree contact forms:** :warning:
+>
+> Email-based forms are being [phased out](https://help.formspree.io/hc/en-us/articles/360056076314) by Formspree. [#11](https://github.com/raviriley/agency-jekyll-theme/pull/11) updated this theme to use the [new Formspree structure](https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam). Click [here](https://help.formspree.io/hc/en-us/articles/360056076314) for instructions on updating your site's form.
 
-> Strongly suggest to fork and change project name to create your GitHub Pages instead of downloading it directly. Because in the future, I will develop many funny modules like 'footprint' to show your world wide trip. Could be easier to merge new features in the future.
+## About
 
-## Notable Features
+This is the [Agency Bootstrap theme](https://startbootstrap.com/themes/agency/), converted to a gem-based Jekyll theme with GitHub Pages support.
 
-* Compatible with Jekyll 3.x and GitHub Pages
-* Based on Bootstrap
-* [Github Module](http://dongchuan.github.io/open-source) to show your popular projects in a single page and on sidebar automatically. (Datas are retreived by github metadata instead of by api calls, so no delay) 
-* [Post Module](http://dongchuan.github.io/blog) to show all your posts with timeline
-* [Bookmark Module](http://dongchuan.github.io/bookmark) to establish a quick mark about all libs/tools/books you like to use.
-* [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html) to generat a quick directory of your post by titles/subtitles automatically.
-* Support [Disqus Comment](https://disqus.com/home/explore/)
-* Support [Google Analytics](https://analytics.google.com/analytics/web/)
+While this has been done before, [here](https://github.com/y7kim/agency-jekyll-theme), [here](https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency), and [here](https://github.com/laklau/agency-jekyll-theme/), these are outdated and have not been updated or maintained for years. I built this theme from the most recent Bootstrap source.
 
-Features in future:
-* A Footprint module to show all your travel around the world
-* Feature to share. (Facebook, twitter, evernote and so on)
-* (Not sure) A embeded todo list. (Not sure) to travel, to complete, to do for your parents, etc. To do in life!
-* Creative ideas to discuss with you :P
+I also added a lot of new features that go beyond the original theme's capabilities:
 
-## Install and setup
+- GitHub Pages support
+- [template repo][template] to get up and running in minutes
+- contact form functionality powered by [Formspree.io](https://formspree.io)
+- multiple language support (currently English, Spanish, & German)
+- custom pages
+- 404 page
+- legal/Privacy Policy page
+- Google Analytics support
+- Markdown support
+- custom images
+- logo support (instead of just title text)
+- automatically updating copyright years
+- custom navigation bar, even without the header image(s)
+- customizable footer
+- custom accent color and dark/light colors
+- horizontal scrolling support for client section
+<!--
+- custom colors with automatic gradient generation (coming soon)
+- site title logo text font customization (coming soon)
+- horizontal scrolling support for portfolio section (coming soon)
+- about section (different from the timeline) -->
 
-Before using it, you may need [Bower](http://bower.io/) and [Bundler](http://bundler.io/) on your local to install dependencies.
+The Jekyll structure of this theme includes:
 
-1. Fork code and clone
-2. Run `bower install` to install all dependencies in [bower.json](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/bower.json)
-3. Run `bundle install` to install all dependencies in [Gemfile](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/Gemfile)
-4. Update `_config.yml` with your own settings.
-5. Add posts in `/_posts`
-6. Commit to your own Username.github.io repository.
-7. Then come back to star this theme!
+- `_portfolio` files - what generate the portfolio grid. YAML front matter handles all the details
+- the `page` layout allows custom pages, as seen in the legal and 404 pages
+- `sitetext.yml` enables complete customization of all site text
+- `navigation.yml` enables fully customizable navigation
+- `style.yml` enables fully customizable colors, background images, and other style-related things
 
-> When install dependencies by bundler or gem, you may have some errors depending on your environment.
+**If you enjoy this theme, please consider [supporting me](https://www.paypal.me/raviriley) to continue developing and maintaining it.**
 
-> Error about `json`. Check response of [Massimo Fazzolari on Stackoverflow](http://stackoverflow.com/questions/8100891/the-json-native-gem-requires-installed-build-tools) to quick fix your problem. (Please also use latest version instead of 1.9.3 mentioned in the response)
-  
-> Error about `jekyll-paginate`. Please check [here](http://stackoverflow.com/questions/35401566/dont-have-jekyll-paginate-or-one-of-its-dependencies-installed)
+<div align="center">
 
-> Error about `SSL_connect`. Please check [here](http://stackoverflow.com/questions/15305350/gem-install-fails-with-openssl-failure) and [here](http://railsapps.github.io/openssl-certificate-verify-failed.html)
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/raviriley)
 
-> For the moment, when you test on your local, you need to keep internet connection. Bug will be fixed soon.
+</div>
 
-## How to use
+## Installation
 
-#### Create a new post
+There are three ways to install this theme:
 
-Create a `.md` file inside `_posts` folder.
+1. As a gem-based theme
+2. Use the [starter template][template] (best for GitHub Pages)
+3. As a remote theme
 
-Name the file according to the standard jekyll format.
+#### 1. Gem-based Theme Installation
 
-```
-2016-01-19-i-love-yummy.md
-```
+Replace the contents of your `_config.yml` file with the sample [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme/master/_config.yml).
 
-Write the Front Matter and content in the file.
+Install the gem with:
 
-```
----
-layout: post
-title: Post title
-category: Category
-tags: [tag1, tag2]
----
-```
-
-Please find examples [here](https://github.com/DONGChuan/DONGChuan.github.io/tree/master/_posts)
-
-> Jekyll supports different structure of repository. You could just create as many folders as you want under _posts. Then jekyll will look through all folders/subfolders to find your posts. So cool, right? :D
-
-#### [Post Navigation Module](http://dongchuan.github.io/css/2016/04/22/CSS-Animation.html)
-
-When writing post, please always follow this format:
-
-```
-Description about this post, blablabla
-
-## Title A
-
-### Title A-1
-
-### Title A-2
-
-## Title B
-
-### Title B-1
-
+```sh
+$ bundle add jekyll-agency
 ```
 
-So, Title A, A-1, A-2, Title B, B-1 will be detected and created as a directory
+Or manually.
 
-For example, [a demo post](https://github.com/DONGChuan/DONGChuan.github.io/edit/master/_posts/2016-04-22-CSS-Animation.md)
+1. Add this line to your Jekyll site's `Gemfile`:
+   ```ruby
+   gem "jekyll-agency"
+   ```
+2. Then execute:
+   ```sh
+   $ bundle install
+   ```
 
-But if you do not like it or your post is quite short. You want to hide this navigation to make your post occupy your full screen. You just need to set **no-post-nav:true** in the Front Matter of the post where you want to hide this feature :D
+#### 2. Using the [Starter Template][template]
 
-#### [Github Module](http://dongchuan.github.io/open-source)
+This is the fastest and easiest way to get up and running on GitHub Pages.
 
-This module will get automatically all your repository information from github. But to test on your local, you must keep internet connection. 
-In the future, it will also show the repositories you contributed a lot and the ones of your organization.
+Simply generate your own repository by clicking the button below. Then replace the sample content with your own and configure for your needs.
 
-#### [Bookmark Module](http://dongchuan.github.io/bookmark)
+<div align="center">
 
-To add new marks, you only need to edit [bookmark.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/bookmark.md).
+[![Use this template](https://img.shields.io/badge/Generate-Use_this_template-2ea44f?style=for-the-badge)][generate]
 
-#### [Customize About Page](http://dongchuan.github.io/about)
+</div>
+    
+#### 3. Remote Theme Installation
 
-Feel free to customize about.me page to show yourself. You only need to modify [about.md](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/about.md) and [about.html](https://github.com/DONGChuan/Yummy-Jekyll/blob/master/_includes/about.html)
+Replace your `_config.yml` file with the starter [\_config.yml](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/_config.yml).
 
-## ToDo
+Replace your `Gemfile` with the starter [Gemfile](https://raw.githubusercontent.com/raviriley/agency-jekyll-theme-starter/master/Gemfile).
 
-- [ ] List posts by a specified tag
-- [ ] New module FootPrint to show your world around trips
-- [ ] Show projects from your orgnization on github. (Siderbar, in open-source page)
-- [ ] To fix bug - could only test on local with internet connected.
+Then install gems.
 
-## Contributor
+```sh
+$ bundle install
+```
 
-* [DONGChuan](https://github.com/DONGChuan)
-* [Mojtaba Koosej](https://github.com/mkoosej)
-* [shahsaurabh0605](https://github.com/shahsaurabh0605)
-* [Z-Beatles](http://www.waynechu.cn/)
-* [LM450N](https://github.com/LM450N)
-* [XhmikosR](https://github.com/XhmikosR)
+<!--
+## Documentation and Usage
+
+**TODO:** Write usage instructions here. Describe available layouts, includes, or assets.
+
+navheader is used only for the home page. nav is used everywhere else.
+
+Layouts:
+
+Includes:
+
+-->
+
+## Contributing
+
+This project is intended to be a welcoming space for collaboration. If you have an idea, suggestion, feature request, etc., feel free to open an issue or pull request.
+
+For bug reports, follow the provided template.
+
+#### Improvements - Up for Grabs
+
+- [x] multiple language support thanks to [@rbenitezpagan](https://github.com/rbenitezpagan)
+  - [x] Spanish thanks to [@rbenitezpagan](https://github.com/rbenitezpagan)
+  - [x] German thanks to [@bkfirmen](https://github.com/bkfirmen)
+  - [ ] Chinese
+  - [ ] Arabic
+  - [ ] etc
+- [ ] customizable background coloring for each section
+
+## Development
+
+To set up your environment to develop this theme, clone this repo or your fork.
+
+```sh
+$ git clone https://github.com/raviriley/agency-jekyll-theme.git
+$ cd agency-jekyll-theme
+```
+
+Then run:
+
+```sh
+$ bundle install
+```
+
+To test the theme, run this. (Using the `--trace` flag for verbose errors.)
+
+```sh
+$ bundle exec jekyll serve --trace
+```
+
+Then open your browser at:
+
+- http://localhost:4000
+
+Add pages, documents, data, etc. like normal to test the theme's contents. As you make modifications, your site will regenerate and you should see the changes in the browser after a refresh.
 
 ## License
 
-The Apache License 2.0
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-Copyright (c) 2016 DONG Chuan
+<!--
 
-Check [LICENSE](https://github.com/DONGChuan/DONGChuan.github.io/blob/master/LICENSE) file and [official website](http://www.apache.org/licenses/LICENSE-2.0) for details
+## Example Implementations
+
+- [CV Enterprises](https://cventerprises.org)
+- [Mortazavi Lab at UC Irvine](https://mortazavilab.github.io/)
+
+-->
+
+[demo-page]: https://raviriley.github.io/agency-jekyll-theme-starter/
+[template]: https://github.com/raviriley/agency-jekyll-theme-starter
+[generate]: https://github.com/raviriley/agency-jekyll-theme-starter/generate

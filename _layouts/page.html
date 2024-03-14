@@ -1,9 +1,14 @@
 ---
 layout: default
 ---
-{% include jumbotron.html %}
-<article class="post container">
+{% include nav.html %}
 
-    {{ content }}
+{% if page.background == "grey" or page.background == "gray" %}
+<script>
+document.getElementById("page-top").className="bg-light";
+</script>
+{% endif %}
 
-</article>
+<div class="container" id="pagecontainer">
+{{ content }}
+</div>
