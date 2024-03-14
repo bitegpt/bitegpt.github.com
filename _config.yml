@@ -214,7 +214,7 @@ yat:
 
 
 # changyan comments
- changyan: true
+# changyan: true
 #   shortname: "Your Disqus username"
 
 # Disqus comments
