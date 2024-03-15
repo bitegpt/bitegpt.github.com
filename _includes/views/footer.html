@@ -3,6 +3,9 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
+
+      <a target="_blank" style="border: 1px solid white;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);border-radius: 2px 2px 2px 2px;font-size: 12px;line-height: 14px;position:fixed;z-index:999;display: inline-block;width: 25px;word-wrap: break-word;padding: 10px 6px;color: #FFFFFF; background: #0098FF; left: 0; bottom: 20px;" rel="noopener" href="https://jinshuju.net/f/W1mbxe">提升成绩</a>
+
         {%- assign currentYear = 'now' | date: "%Y" -%}
         {%- assign copyright = site.copyright
             | replace: '{currentYear}', currentYear
@@ -12,10 +15,8 @@
             | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
         -%}
       <div>{{ copyright }}</div>
-      <!-- <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
-      generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
-      another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div> -->
+      <div>Powered by <a title="Jekyll." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
+      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
     </div>
   </div>
 </footer>
