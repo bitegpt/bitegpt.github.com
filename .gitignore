@@ -6,7 +6,3 @@ Gemfile.lock
 .DS_Store
 _includes/.DS_Store
 assets/.DS_Store
-
-.jekyll-cache
-unused
-bootstrap-reference.html
