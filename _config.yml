@@ -24,7 +24,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 老冯的教育观
+title: 观山
 #email: your-email@domain.com
 author: 老冯
 
@@ -43,7 +43,7 @@ author: 老冯
 copyright: "Unpublished Work (cleft) 2023-{currentYear} {author}"
 
 description: >- # this means to ignore newlines until "baseurl:"
-  这个网站是中学生家长教育孩子必看的指南，为您提供专业建议和实用技巧。
+  这个网站是一个中年人想要跳出思维桎梏的尝试。
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. https://example.com
