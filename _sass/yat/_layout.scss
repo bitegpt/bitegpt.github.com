@@ -110,7 +110,7 @@ html {
 
     .site-favicon {
       display: inline-block;
-      height: #{$header-height / 1.5};
+      height: #{$header-height / 1.25};
       margin-right: 5px;
       border-radius: 50%;
     }
@@ -118,7 +118,7 @@ html {
 }
 
 .site-nav {
-  @include relative-font-size(1.25);
+  @include relative-font-size(1.125);
   line-height: $header-height;
   position: absolute;
   right: 0;
@@ -198,7 +198,7 @@ html {
   background-color: $footer-background-color;
   text-align: left;
   transition: background-color 0.2s;
-  font-size: 0.8em;
+  font-size: 0.875em;
 
 
   .site-footer-inner {
@@ -235,7 +235,7 @@ html {
     line-height: 1;
 
     @include media-query($on-laptop) {
-      @include relative-font-size(2.25);
+      @include relative-font-size(2);
     }
   }
 
@@ -455,15 +455,15 @@ html {
     }
 
     h3 {
-      @include relative-font-size(1.5);
+      @include relative-font-size(1.25);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.375);
+        @include relative-font-size(1.25);
       }
     }
 
     h4 {
-      @include relative-font-size(1.25);
+      @include relative-font-size(1.125);
 
       @include media-query($on-laptop) {
         @include relative-font-size(1.125);
@@ -485,7 +485,7 @@ html {
     }
 
     p, hr {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
 
     hr {
@@ -497,9 +497,9 @@ html {
 
   .post-related {
     &>*:first-child {
-      @include relative-font-size(1.325);
+      @include relative-font-size(1.125);
       color: #333;
-      margin-bottom: 14px;
+      margin-bottom: 0.5em;
     }
 
     ul {
@@ -507,7 +507,7 @@ html {
     }
 
     .post-link {
-      @include relative-font-size(1.075);
+      @include relative-font-size(1);
       color: $grey-color;
 
       &:hover {
@@ -527,8 +527,9 @@ html {
 .post-nav {
   display: flex;
   justify-content: space-between;
-  margin: 72px 0 59px;
-  padding: 31px 0 0;
+  margin: 3em 0 2em;
+  padding: 1em 0 0;
+  background: #ebebeb;
 
   a {
     @include relative-font-size(1.025);
@@ -735,13 +736,20 @@ html {
 
  .page-segments ul li {
     float: left;
-    margin: 4px;
+    margin: 0.5em 0.125em 0 0;
+    width: 225px;
+    height: 1.75em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
 }
 
 .page-segments {
   .page-segments-list {
     list-style: none;
     float: left;
+    margin-left: 0px;
 
   }
 
@@ -750,7 +758,7 @@ html {
     width: 100%;
     float: left;
     top: 0;
-    background: #b8c1c8;
+    background: #ebebeb;
     padding: 8px 8px 8px 8px;
     position: sticky;
 
