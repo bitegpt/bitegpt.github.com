@@ -40,6 +40,8 @@
               {%- endif -%}
             {%- endfor -%}
 
+            {%- include extensions/theme-toggle.html -%}
+
 
 
             <!-- {%- assign name = 'translate_langs' -%}
@@ -50,7 +52,7 @@
               {%- include functions.html func='get_value' default='en' -%}
               {%- assign lang = return -%} -->
               <span class="page-link">
-                {%- include extensions/theme-toggle.html -%}
+
                   <!-- {%- include extensions/google-translate.html -%} -->
               </span>
 
