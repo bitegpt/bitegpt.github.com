@@ -88,6 +88,8 @@ html {
 
   .site-header-inner {
     position: relative;
+    max-width: 920px;
+
   }
 }
 
@@ -224,7 +226,7 @@ html {
   }
 
   .post-title {
-    @include relative-font-size(2.625);
+    @include relative-font-size(2.0);
     letter-spacing: -1px;
     line-height: 1;
 
@@ -442,15 +444,15 @@ html {
     word-break: normal;
 
     h2 {
-      @include relative-font-size(2);
+      @include relative-font-size(1.75);
 
       @include media-query($on-laptop) {
-        @include relative-font-size(1.75);
+        @include relative-font-size(1.5);
       }
     }
 
     h3 {
-      @include relative-font-size(1.625);
+      @include relative-font-size(1.5);
 
       @include media-query($on-laptop) {
         @include relative-font-size(1.375);
@@ -492,7 +494,7 @@ html {
 
   .post-related {
     &>*:first-child {
-      @include relative-font-size(1.425);
+      @include relative-font-size(1.325);
       color: #333;
       margin-bottom: 14px;
     }
@@ -526,7 +528,7 @@ html {
   padding: 31px 0 0;
 
   a {
-    @include relative-font-size(1.125);
+    @include relative-font-size(1.025);
     color: $grey-color;
     line-height: 15px;
     max-width: 50%;
