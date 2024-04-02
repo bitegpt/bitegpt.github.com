@@ -732,18 +732,29 @@ html {
 /**
  * Segments page
  */
+
+ .page-segments ul li {
+    float: left;
+    margin: 4px;
+}
+
 .page-segments {
   .page-segments-list {
-    margin-left: 0;
     list-style: none;
+    float: left;
+
   }
 
   .segment-name {
-    font-weight: $base-font-weight * 1.5;
-    margin-bottom: 8px;
-    position: relative;
+    font-weight: $base-font-weight * 1.125;
+    width: 100%;
+    float: left;
+    top: 0;
+    background: #b8c1c8;
+    padding: 8px 8px 8px 8px;
+    position: sticky;
 
-    @include relative-font-size(1.6);
+    @include relative-font-size(1.126);
 
     &:not(:first-child) {
       margin-top: 28px;
