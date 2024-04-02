@@ -89,6 +89,7 @@ html {
   .site-header-inner {
     position: relative;
     max-width: 920px;
+    margin: auto;
 
   }
 }
@@ -96,6 +97,7 @@ html {
 .site-brand {
   line-height: $header-height;
   margin-right: 50px;
+  font-size: 1.25em;
 
   .site-brand-inner {
     @include relative-font-size(1.125);
@@ -116,7 +118,7 @@ html {
 }
 
 .site-nav {
-  @include relative-font-size(1.125);
+  @include relative-font-size(1.25);
   line-height: $header-height;
   position: absolute;
   right: 0;
@@ -196,6 +198,8 @@ html {
   background-color: $footer-background-color;
   text-align: left;
   transition: background-color 0.2s;
+  font-size: 0.8em;
+
 
   .site-footer-inner {
     transition: border-top 0.2s;
