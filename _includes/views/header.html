@@ -38,14 +38,11 @@
               {%- if my_page.title -%}
               <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | upcase | escape }}</a>
               {%- endif -%}
-              
-              {%- include extensions/theme-toggle.html -%}
-
             {%- endfor -%}
 
             <span class="page-link">
+
             {%- include extensions/theme-toggle.html -%}
-            </span>
 
             {%- assign name = 'translate_langs' -%}
             {%- include functions.html func='get_value' -%}
