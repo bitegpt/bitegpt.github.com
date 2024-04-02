@@ -40,17 +40,19 @@
               {%- endif -%}
             {%- endfor -%}
 
-            {%- assign name = 'translate_langs' -%}
+            {%- include extensions/theme-toggle.html -%}
+
+            <!-- {%- assign name = 'translate_langs' -%}
             {%- include functions.html func='get_value' -%}
             {%- assign translate_langs = return -%}
             {%- if translate_langs.size > 0 -%}
               {%- assign name = 'lang' -%}
               {%- include functions.html func='get_value' default='en' -%}
-              {%- assign lang = return -%}
+              {%- assign lang = return -%} -->
               <span class="page-link">
-                  {%- include extensions/google-translate.html -%}
+                  <!-- {%- include extensions/google-translate.html -%} -->
               </span>
-              {%- include extensions/theme-toggle.html -%}
+
             {%- endif -%}
           </div>
         </nav>
