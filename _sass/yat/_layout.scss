@@ -422,7 +422,7 @@ html {
   @extend %post-header;
 
   .post-header {
-    margin: 50px auto 60px;
+    margin: 32px auto 20px;
     padding: 0 0 20px;
     border-bottom: 1px solid #ebebeb;
 
@@ -528,7 +528,7 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 3em 0 2em;
-  padding: 1em 0 0;
+  padding: 1em;
   background: #ebebeb;
 
   a {
