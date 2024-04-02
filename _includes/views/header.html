@@ -40,7 +40,9 @@
               {%- endif -%}
             {%- endfor -%}
 
+            <span class="page-link">
             {%- include extensions/theme-toggle.html -%}
+            </span>
 
             {%- assign name = 'translate_langs' -%}
             {%- include functions.html func='get_value' -%}
