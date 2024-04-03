@@ -68,7 +68,7 @@
   }
 
   @include media-query(1024px) {
-    margin-right: 35px;
+    
   }
 
   @include media-query($on-palm) {
