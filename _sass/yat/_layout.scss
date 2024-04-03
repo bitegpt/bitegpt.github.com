@@ -361,6 +361,11 @@ html {
     word-break: break-word;
     overflow-wrap: break-word;
     flex: 1;
+    height: 105px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
   }
 
   .post-tags .post-tag {

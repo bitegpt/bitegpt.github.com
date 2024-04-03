@@ -101,14 +101,7 @@ html[data-theme="dark"]  {
   }
 
 
-  .pagination .post-text {
-    height: 105px;
-    word-break: break-all;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
+  
 
   .pagination {
     .post-link {
@@ -153,6 +146,10 @@ html[data-theme="dark"]  {
         background-color: #555;
       }
     }
+
+    .post-nav {
+  background: #232222;
+  }
 
     .post-related {
       & > *:first-child {
