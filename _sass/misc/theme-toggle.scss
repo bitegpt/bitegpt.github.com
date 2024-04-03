@@ -1,7 +1,8 @@
 .theme-toggle {
   position: relative;
   width: $base-font-size * 4;
-  margin: auto;
+  margin: 16px 0;
+  float: right;
   transition: .3s cubic-bezier(.4,.03,0,1);
 
   label, .toggle {
